@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact - Curriculum Website</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <ul>
+        <li><a href="<%= root_path %>">Home</a></li>
+        <li><a href="<%= summary_path %>">Summary</a></li>
+        <li><a href="<%= experience_path %>">Experience</a></li>
+        <li><a href="<%= skills_path %>">Skills</a></li>
+        <li><a href="<%= projects_path %>">Projects</a></li>
+        <li><a href="<%= education_path %>">Education</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <%= form_with url: contact_path, local: true do |form| %>
+      <div>
+        <%= form.label :name, "Your Name" %>
+        <%= form.text_field :name %>
+      </div>
+      <div>
+        <%= form.label :email, "Your Email" %>
+        <%= form.email_field :email %>
+      </div>
+      <div>
+        <%= form.label :message, "Your Message" %>
+        <%= form.text_area :message %>
+      </div>
+      <div>
+        <%= form.submit "Send" %>
+      </div>
+    <% end %>
+  </main>
+</body>
+</html>

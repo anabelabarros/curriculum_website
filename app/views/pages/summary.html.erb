@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Summary - Curriculum Website</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+</head>
+<body>
+  <header>
+    <h1>Summary</h1>
+    <nav>
+      <ul>
+        <li><a href="<%= root_path %>">Home</a></li>
+        <li><a href="<%= experience_path %>">Experience</a></li>
+        <li><a href="<%= skills_path %>">Skills</a></li>
+        <li><a href="<%= projects_path %>">Projects</a></li>
+        <li><a href="<%= education_path %>">Education</a></li>
+        <li><a href="<%= contact_path %>">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <p>[Your Summary]</p>
+  </main>
+</body>
+</html>

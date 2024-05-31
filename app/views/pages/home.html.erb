@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Curriculum Website</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+</head>
+<body>
+  <header>
+    <h1>Job Position: [Job Title]</h1>
+    <nav>
+      <ul>
+        <li><a href="<%= summary_path %>">Summary</a></li>
+        <li><a href="<%= experience_path %>">Experience</a></li>
+        <li><a href="<%= skills_path %>">Skills</a></li>
+        <li><a href="<%= projects_path %>">Projects</a></li>
+        <li><a href="<%= education_path %>">Education</a></li>
+        <li><a href="<%= contact_path %>">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+    </div>
+    <p>City: [Your City]</p>
+    <p>Portfolio: <a href="https://yourportfolio.com" target="_blank">https://yourportfolio.com</a></p>
+  </header>
+</body>
+</html>
