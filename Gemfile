@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 ruby "3.1.2"
-gem 'font-awesome-rails'
+gem 'font-awesome-sass'
 
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
