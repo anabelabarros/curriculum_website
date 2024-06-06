@@ -1,31 +1,21 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
-</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Messages</a>
-          </li>
-          <li class="nav-item dropdown">
-            <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" data-turbo-method="delete" href="#">Log out</a>
-            </div>
-          </li>
-          <!--li class="nav-item"-->
-          <!--/li-->
+<header>
+  <div class="header-content">
+    <h1>Front End Developer</h1>
+    <nav>
+      <ul class="navbar">
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><i class="fa-solid fa-grip-lines"></i></a>
+          <div class="dropdown-content">
+            <a href="<%= summary_path %>">Summary</a>
+            <a href="<%= experience_path %>">Experience</a>
+            <a href="<%= skills_path %>">Skills</a>
+            <a href="<%= projects_path %>">Projects</a>
+            <a href="<%= education_path %>">Education</a>
+            <a href="<%= contact_path %>">Contact</a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+          </div>
+        </li>
       </ul>
-    </div>
+    </nav>
   </div>
-</div>
+</header>
