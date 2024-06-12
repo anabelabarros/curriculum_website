@@ -18,8 +18,12 @@
  *= require_self
  *= require_tree .
  */
+ @import "colors";
+
+
 
 //  @import "font-awesome-sprockets";
+
  @import "custom";
  @import "https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap";
  @import "font";
@@ -34,3 +38,4 @@
 @import "education";
 @import "contact";
 @import "font-awesome";
+@import "footer";

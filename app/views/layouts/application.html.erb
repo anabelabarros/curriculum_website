@@ -11,11 +11,15 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags  'application'%>
+    <%= javascript_include_tag 'custom', 'data-turbo-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 
   </head>
 
   <body>
-    <%= render "layouts/navbar" %>
+    <%= render "shared/navbar" %>
     <%= yield %>
+    <%= render 'shared/footer' %>
   </body>
 </html>
