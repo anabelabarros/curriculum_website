@@ -1,31 +1,161 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+// @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+*, *:before, *:after {box-sizing:border-box;}
+// body {
+//   background-color: #212121;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 100vh;
+//   color: #ccc;
+//   font-family: sans-serif;
+//   font-size: 18px;
+// }
+
+.range {
+  position: relative;
+  background-color: #333;
+  width: 300px;
+  height: 30px;
+  transform: skew(30deg);
+  font-family: 'Orbitron', monospace;
+
+  &:before {
+    --width: calc(var(--p) * 1%);
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #6197e9;
+    z-index: 0;
+    animation: load .5s forwards linear, glitch 2s infinite linear;
+  }
+
+  &:after {
+    counter-reset: progress var(--p);
+    content: counter(progress) '%';
+    color: #000;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%) skewX(-30deg);
+    z-index: 1;
+  }
+
+  &__label {
+    transform: skew(-30deg) translateY(-100%);
+    line-height: 1.5;
+  }
 }
 
-.coming-soon-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #3498db; /* Blue color for the bar */
-  color: white;
-  text-align: center;
-  padding: 10px;
-  z-index: 1000; /* Ensures the bar stays on top */
-  font-size: 1.2em;
-  font-weight: bold;
-  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+@keyframes load {
+  to {
+    width: var(--width);
+  }
 }
 
-.coming-soon-bar:hover {
-  background-color: #28a745; /* Green color when hovered */
+@keyframes glitch {
+  0%, 5% {
+    transform: translate(0, 0);
+  }
+  1% {
+    transform: translate(-5%, -10%);
+  }
+  2% {
+    transform: translate(10%, 30%);
+  }
+  3%{
+    transform: translate(-43%, 10%);
+  }
+  4% {
+    transform: translate(2%, -23%);
+  }
 }
 
-.coming-soon-bar p {
-  margin: 0;
-}
 
-.content {
-  padding-top: 60px; /* Ensure main content is not hidden under the bar */
-}
+
+
+// HTML CSSResult Skip Results Iframe
+// EDIT ON
+// progress[value] {
+//   --color:  /* the progress color */
+//     linear-gradient(#fff8,#fff0),
+//     repeating-linear-gradient(135deg,#0003 0 10px,#0000 0 20px),
+//     #31c6f7;
+//   --background: lightgrey; /* the background color */
+
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   border: none;
+//   width: 200px;
+//   margin: 0 10px;
+//   border-radius: 10em;
+//   background: var(--background);
+// }
+// progress[value]::-webkit-progress-bar {
+//   border-radius: 10em;
+//   background: var(--background);
+// }
+// progress[value]::-webkit-progress-value {
+//   border-radius: 10em;
+//   background: var(--color);
+// }
+// progress[value]::-moz-progress-bar {
+//   border-radius: 10em;
+//   background: var(--color);
+// }
+
+// label {
+//   font-size: 20px;
+//   font-weight: bold;
+//   display: block;
+//   margin: 20px 0;
+// }
+
+
+
+
+
+
+
+
+// body {
+//   margin: 0;
+//   font-family: Arial, sans-serif;
+// }
+
+// .coming-soon-bar {
+//   position: fixed; /* Keeps the bar fixed at the top of the viewport */
+//   top: 0; /* Position at the top */
+//   left: 0;
+//   width: 100%;
+//   background-color: #3498db; /* Blue color for the bar */
+//   color: white;
+//   text-align: center;
+//   padding: 10px;
+//   z-index: 1000; /* Ensures the bar stays on top */
+//   font-size: 1.2em;
+//   font-weight: bold;
+//   transition: background-color 0.3s ease; /* Smooth transition for background color change */
+// }
+
+// .coming-soon-bar:hover {
+//   background-color: #28a745; /* Green color when hovered */
+// }
+
+// .coming-soon-bar p {
+//   margin: 0;
+// }
+
+// .loading-bar {
+//   height: 4px; /* Height of the loading bar */
+//   background-color: #f39c12; /* Color of the loading bar */
+//   margin-top: 5px; /* Space between the text and the loading bar */
+// }
+
+// .content {
+//   padding-top: 70px; /* Ensure main content is not hidden under the bar */
+// }
