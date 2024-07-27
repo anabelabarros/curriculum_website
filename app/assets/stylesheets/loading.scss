@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 *, *:before, *:after {box-sizing:border-box;}
 // body {
 //   background-color: #212121;
@@ -28,7 +28,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #082f76;
+    background-color: #6197e9;
     z-index: 0;
     animation: load .5s forwards linear, glitch 2s infinite linear;
   }
@@ -36,7 +36,7 @@
   &:after {
     counter-reset: progress var(--p);
     content: counter(progress) '%';
-    color: #ffffff;
+    color: #000;
     position: absolute;
     left: 5%;
     top: 50%;
@@ -73,6 +73,48 @@
     transform: translate(2%, -23%);
   }
 }
+
+
+
+
+// HTML CSSResult Skip Results Iframe
+// EDIT ON
+// progress[value] {
+//   --color:  /* the progress color */
+//     linear-gradient(#fff8,#fff0),
+//     repeating-linear-gradient(135deg,#0003 0 10px,#0000 0 20px),
+//     #31c6f7;
+//   --background: lightgrey; /* the background color */
+
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   border: none;
+//   width: 200px;
+//   margin: 0 10px;
+//   border-radius: 10em;
+//   background: var(--background);
+// }
+// progress[value]::-webkit-progress-bar {
+//   border-radius: 10em;
+//   background: var(--background);
+// }
+// progress[value]::-webkit-progress-value {
+//   border-radius: 10em;
+//   background: var(--color);
+// }
+// progress[value]::-moz-progress-bar {
+//   border-radius: 10em;
+//   background: var(--color);
+// }
+
+// label {
+//   font-size: 20px;
+//   font-weight: bold;
+//   display: block;
+//   margin: 20px 0;
+// }
+
 
 
 
