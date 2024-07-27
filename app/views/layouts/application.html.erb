@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CurriculumvitaeWebsite</title>
+    <title>CurriculumWebsite</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-    </style>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags  'application'%>
-    <%= javascript_include_tag 'custom', 'data-turbo-track': 'reload' %>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-
+    <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <%= render "shared/navbar" %>
+  <%= render "shared/navbar" %>
     <%= yield %>
-    <%= render 'shared/footer' %>
+
+    <br>
+     <%= render "shared/loading" %>
+    <%= render "shared/footer" %>
   </body>
 </html>

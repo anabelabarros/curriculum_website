@@ -7,4 +7,8 @@ test:
 production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+<<<<<<< HEAD
   channel_prefix: curriculumvitae_website_production
+=======
+  channel_prefix: curriculum_website_production
+>>>>>>> d30d7f3 (home navbar loading and footer correction)

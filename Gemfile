@@ -1,11 +1,17 @@
 source "https://rubygems.org"
 
 ruby "3.1.2"
+<<<<<<< HEAD
 gem 'font-awesome-sass'
 
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.3"
+=======
+
+# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
+gem "rails", "~> 7.1.3", ">= 7.1.3.2"
+>>>>>>> d30d7f3 (home navbar loading and footer correction)
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -33,12 +39,20 @@ gem "jbuilder"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
+<<<<<<< HEAD
+=======
+gem 'sassc-rails'
+
+>>>>>>> d30d7f3 (home navbar loading and footer correction)
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
+<<<<<<< HEAD
 gem 'sassc-rails', '>= 2.1.2'
 
+=======
+>>>>>>> d30d7f3 (home navbar loading and footer correction)
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mswin mswin64 mingw x64_mingw jruby ]
 

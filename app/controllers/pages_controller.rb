@@ -1,5 +1,9 @@
 class PagesController < ApplicationController
   def home
+    respond_to do |format|
+      format.html # This will render home.html.erb by default
+      format.json { head :no_content } # This will respond with 204 No Content
+    end
   end
 
   def summary

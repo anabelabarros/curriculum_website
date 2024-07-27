@@ -6,7 +6,11 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+<<<<<<< HEAD
 module CurriculumvitaeWebsite
+=======
+module CurriculumWebsite
+>>>>>>> d30d7f3 (home navbar loading and footer correction)
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.1

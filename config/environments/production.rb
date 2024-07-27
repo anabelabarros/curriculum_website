@@ -69,7 +69,11 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter = :resque
+<<<<<<< HEAD
   # config.active_job.queue_name_prefix = "curriculumvitae_website_production"
+=======
+  # config.active_job.queue_name_prefix = "curriculum_website_production"
+>>>>>>> d30d7f3 (home navbar loading and footer correction)
 
   config.action_mailer.perform_caching = false
 
