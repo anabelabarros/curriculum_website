@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   # root "posts#index"
   root to: 'pages#home'
 
+  get 'home', to: 'pages#home'
   get 'summary', to: 'pages#summary'
   get 'experience', to: 'pages#experience'
   get 'skills', to: 'pages#skills'
