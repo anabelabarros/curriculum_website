@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.coming-soon-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3498db; /* Blue color for the bar */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000; /* Ensures the bar stays on top */
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.coming-soon-bar:hover {
+  background-color: #28a745; /* Green color when hovered */
+}
+
+.coming-soon-bar p {
+  margin: 0;
+}
+
+.content {
+  padding-top: 60px; /* Ensure main content is not hidden under the bar */
+}
